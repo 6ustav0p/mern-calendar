@@ -82,7 +82,7 @@ const loginUsuario = async (req, res = response) => {
 
         res.status(201).json({
             ok: true,
-            uid: usuario.uid,
+            uid: usuario.id,
             name: usuario.name,
             token
         })
@@ -109,6 +109,7 @@ const revalidarToken = async (req, res = response) => {
 
     res.json({
         ok: true,
+        uid, name,
         token
     })
 
