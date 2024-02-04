@@ -20,7 +20,7 @@ app.use(cors());
 
 // Directorio Público
 
-app.use(express.static('public'));
+app.use(express.static('./public'));
 
 // Lectura y parseo del body
 
